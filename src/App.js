@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import { Login } from "./Login";
 import { Register } from "./Register";
+import { ForgotPassword } from "./ForgotPassword";
 
 function App() {
   const [currentForm, setCurrentForm] = useState("login");
@@ -14,7 +15,7 @@ function App() {
   return (
     <div className="App">
       {
-        currentForm === "login" ? <Login onFormSwitch={toggleForm} /> : <Register onFormSwitch={toggleForm} />
+        currentForm === "login" ? <Login onFormSwitch={toggleForm} /> : currentForm === "forgotpwd" ? <ForgotPassword onFormSwitch={toggleForm} /> : <Register onFormSwitch={toggleForm} />
       }
     </div>
   );
