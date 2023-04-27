@@ -13,13 +13,13 @@ export const ForgotPassword = (props) => {
             <form className="forgotpwd-form" onSubmit={handleSubmit}>
                 <label htmlFor="id">Student ID</label>
                 <input value={id} onChange={(e) => setID(e.target.value)} placeholder="Student ID" id="id" name="id" />
-                <button type="submit" onClick={email}>Continue</button>
+                <button className="submits" type="submit" onClick={email}>Continue</button>
             </form>
             <button className="link-btn" onClick={() => props.onFormSwitch('login')}>Return to Login</button>
-            <h3 id="e-mail" hidden= {true}>If there is an e-mail matching with provided Student-ID, we sent an e-mail about resetting your password.</h3>
+            <h3 id="e-mail" hidden={true}>If there is an e-mail matching with provided Student-ID, we sent an e-mail about resetting your password.</h3>
         </div>
     )
-    function email(){
+    function email() {
         document.getElementById("e-mail").hidden = false;
     }
 }

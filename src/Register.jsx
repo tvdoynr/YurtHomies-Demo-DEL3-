@@ -17,7 +17,7 @@ export const Register = (props) => {
                 <input value={name} name="name" onChange={(e) => setName(e.target.value)} id="name" placeholder="Full Name" />
                 <label htmlFor="id">Student ID</label>
                 <input value={id} onChange={(e) => setID(e.target.value)} placeholder="Student ID" id="id" name="id" />
-                <button type="submit">Request to Enroll</button>
+                <button className="submits" type="submit">Request to Enroll</button>
             </form>
             <button className="link-btn" onClick={() => props.onFormSwitch('login')}>Already enrolled? Sign in now.</button>
         </div>

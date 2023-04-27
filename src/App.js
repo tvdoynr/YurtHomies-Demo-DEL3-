@@ -13,10 +13,13 @@ function App() {
   }
 
   return (
-    <div className="App">
-      {
-        currentForm === "login" ? <Login onFormSwitch={toggleForm} /> : currentForm === "forgotpwd" ? <ForgotPassword onFormSwitch={toggleForm} /> : <Register onFormSwitch={toggleForm} />
-      }
+    <div className="row">
+      <div className="App">
+        {
+          currentForm === "login" ? <Login onFormSwitch={toggleForm} /> : currentForm === "forgotpwd" ? <ForgotPassword onFormSwitch={toggleForm} /> : <Register onFormSwitch={toggleForm} />
+        }
+      </div>
+      <div className="sideImage"></div>
     </div>
   );
 }
