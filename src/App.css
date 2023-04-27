@@ -97,3 +97,8 @@ input {
   margin-right: 15px;
   float: left;
 }
+
+#e-mail {
+  font-size: 15px;
+  max-width: 300px;
+}
