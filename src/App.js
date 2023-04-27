@@ -22,7 +22,7 @@ function App() {
       </div>
       <div className="sideImage">
         <h3 className='first-txt'> Captured By</h3>
-        <h3 className='second-txt'> - Elif Tekinay & Hilal Nur Koyuncu</h3>
+        <h3 className='second-txt'> - Elif Tekinay & Hilal Nur Koyuncu </h3>
       </div>
     </div>
   );
